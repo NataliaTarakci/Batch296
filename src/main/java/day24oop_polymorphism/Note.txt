@@ -1,0 +1,47 @@
+ NOTES on POLYMORPHISM
+      - Polymorphism => poly means many , morphism means forms  => many forms
+      - Polymorphism is the 2nd characteristic of OOP concept
+      - Polymorphism is used to implement the methods in many ways
+      - Polymorphism consists of two parts:
+          1) Method Overloading (learned previously)
+          2) Method Overriding
+             In Method Overriding, child classes use the methods from parent class but implement
+             them after some modification.
+ In Method Overriding, child classes use the methods from parent class but implement
+             them after some modification.
+       Real life example:
+       BROWSERS => safari, chrome, edge, mozilla, opera, firefox etc.
+       All these types of browsers are actually child classes of Browser class.
+       Browser class has some common features like navigation(), version variable etc.
+       All browsers inherit these common features from the parent class and then
+       implement them for their specific needs after some modification.
+       ********* Rules for Method Overriding *********
+       1) Private methods cannot be overridden!
+       2) Access modifier of the method in child class can not be more
+            restrictive / narrower than the access modifier of the method in parent class
+       3) Final members in a class can not be overridden.
+         Bcs Final keyword is used to prevent any change on the variable or method or class.
+         So if we have final keyword, we have the latest version that we can ever assign
+      4) If a class is final, can not be inherited...
+      5) Static members cannot be overridden...Bcs static members are class property and are common for all the objects...
+      6) When we override a method which has a return type, we can declare the same data type in the child
+         class where we are overriding, or we can use any of its child classes as return data type as well.
+
+
+          - Encapsulation is the 3rd characteristic of OOP concept
+                 - Encapsulation is intended for the protection and hiding of data.
+                 How can a data be encapsulated?
+                 By making access modifier "private". Data will be hidden from all other classes.
+                 How can we read the encapsulated data?
+                 By creating getter method, we can read the encapsulated data.
+                 By creating setter method, we can update the encapsulated data.
+                 1)  By using encapsulation, we can define read(getter) and write(setter) properties separately.
+                 2) We can grant read access to some, and write access to others.
+                 ***Some people should only see the information but not change it.
+                 ***Some people should see the information as well as change it.
+                 NOTES:
+                 - setters do NOT update the original data. The update happens in the object class
+                 - setters do not generate new data; they just modify the existing data.
+                    That's why setters are 'void' methods
+                 - setters take parameters to assign new values to existing encapsulated data.
+                 - getters and setters both are generally non-static

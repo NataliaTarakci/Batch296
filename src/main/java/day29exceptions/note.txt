@@ -1,0 +1,13 @@
+Types of Exceptions?
+1. Compile Time Exceptions (Checked Exceptions)
+      a. FileNotFoundException
+      b. ClassNotFoundException
+2. RunTime Exceptions (UnChecked Exceptions)
+      a. StringIndexOutOfBoundException
+      b. ArrayIndexOutOfBoundException
+      c. ArithmaticException
+      d. NumberFormatException
+      e. IllegalArgumentsException
+       ……..
+To handle exceptions => try catch block
+We can throw exception to stop the application at a given point

@@ -1,0 +1,6 @@
+package day30enums_iterators_records;
+
+public record EmployeeRecord(String employeeName, int employeeNumber) {
+
+
+}
