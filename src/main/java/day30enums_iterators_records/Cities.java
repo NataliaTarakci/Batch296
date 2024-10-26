@@ -2,6 +2,24 @@ package day30enums_iterators_records;
 
 public enum Cities {
 
+    /*
+    In Java, an enum (enumeration) is a special structure used to represent a fixed set of constant values.
+   The enum structure is used to define constants that represent a specific set of values.
+   They hold values that are unlikely to change, such as names of months, days, etc., and are written in uppercase.
+
+   The main advantages of enums are:
+
+   Type Safety: A variable defined with an enum can only possess one of the specified enum values.
+   This prevents the assignment of invalid values.
+
+   Code Readability: The use of enums increases the readability of the code because you can use constants with meaningful names.
+
+   Code Duplication Reduction: Enums prevent the multiple definitions of the same constant values.
+   This reduces code duplication and eliminates dependency on external sources.
+   For example, you store the list of cities in your app, and invoke it when needed.
+   You don't fetch it from a website, which could be down.
+     */
+
     ADANA(1, "Adana", "01000"),
     ADIYAMAN(2, "Adıyaman", "02000"),
     AFYONKARAHİSAR(3, "Afyonkarahisar", "03000"),
@@ -84,15 +102,22 @@ public enum Cities {
     OSMANİYE(80, "Osmaniye", "80000"),
     DÜZCE(81, "Düzce", "81000");
 
+    // Cities => Constant  => ANKARA => constant
+    //  its values are : 6, "Ankara", "06000"
+
+
     private final int plateCode;
     private final String postalCode;
     private final String cityName;
 
+    // constructor is required to initialise the variables. But we still can't create object using this constructor
     Cities(int plateCode, String cityName, String postalCode) {
         this.plateCode = plateCode;
         this.postalCode = postalCode;
         this.cityName = cityName;
     }
+
+    // getters to give access to these variables (Read only)
 
     public int getPlateCode() {
         return plateCode;
@@ -105,4 +130,6 @@ public enum Cities {
     public String getCityName() {
         return cityName;
     }
+
+
 }

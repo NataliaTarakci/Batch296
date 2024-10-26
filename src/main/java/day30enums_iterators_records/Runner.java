@@ -5,15 +5,17 @@ public class Runner {
     public static void main(String[] args) {
 
         Employee employee = new Employee("Jerry", 123);
-        System.out.println(employee.getEmployeeName());
-        System.out.println(employee.getEmployeeNumber());
+        System.out.println(employee); // toString()
+        System.out.println(employee.getEmployeeName()); // Jerry
+        System.out.println(employee.getEmployeeNumber()); // 123
 
-//        EmployeeRecord employee1 = new EmployeeRecord("Jerry", 123);
-//        System.out.println(employee1.EmployeeName());
-//        System.out.println(employee1.EmployeeNumber());
-
-
-
+        // Using Records
+        EmployeeRecord employee1 = new EmployeeRecord("Emily", 678);
+        System.out.println(employee1); // toString() works at the backend
+        System.out.println(employee1.employeeName()); // Emily  (getter method works at the backend)
+        System.out.println(employee1.employeeNum()); // 678    (getter method works at the backend)
 
     }
+
+
 }

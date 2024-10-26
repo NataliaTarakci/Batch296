@@ -5,7 +5,6 @@ public class Employee {
     private final String employeeName;
     private final int employeeNumber;
 
-
     public Employee(String employeeName, int employeeNumber) {
         this.employeeName = employeeName;
         this.employeeNumber = employeeNumber;
@@ -19,6 +18,8 @@ public class Employee {
         return employeeNumber;
     }
 
+
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -26,4 +27,5 @@ public class Employee {
                 ", employeeNumber=" + employeeNumber +
                 '}';
     }
+
 }
