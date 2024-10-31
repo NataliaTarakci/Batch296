@@ -64,11 +64,11 @@ public class LinkedList01 {
         myList.add(1, "Veli");
         System.out.println("myList = " + myList);// [Ali, Veli, Ayse]
 
-        //myList.addFirst("Tom");
-        //System.out.println("myList = " + myList);// [Tom, Ali, Veli, Ayse]
+        myList.addFirst("Tom");
+        System.out.println("myList = " + myList);// [Tom, Ali, Veli, Ayse]
 
-        //myList.addLast("Emily");
-        //System.out.println("myList = " + myList); // [Tom, Ali, Veli, Ayse, Emily]
+        myList.addLast("Emily");
+        System.out.println("myList = " + myList); // [Tom, Ali, Veli, Ayse, Emily]
 
 
         List<String> classList = new LinkedList<>();
@@ -94,10 +94,10 @@ public class LinkedList01 {
         myList.removeAll(classList);
         System.out.println("myList = " + myList); // [Tom, Veli, Emily]
 
-        //myList.removeFirst();
-        //System.out.println("myList = " + myList); // [Veli, Emily]
-        //myList.removeLast();
-        //System.out.println("myList = " + myList);  // [Veli]
+        myList.removeFirst();
+        System.out.println("myList = " + myList); // [Veli, Emily]
+        myList.removeLast();
+        System.out.println("myList = " + myList);  // [Veli]
 
         /*
 

@@ -74,8 +74,8 @@ public class LinkedList02 {
         // element() method retrieves the first element but DOES NOT remove it
 //        System.out.println(list1.element()); // Moon
 //        System.out.println("list1 = " + list1); // [Moon, Mars, Jupitar]
-//
-//        // pop() method returns and removes the first element from the list
+
+        // pop() method returns and removes the first element from the list
         // throws NoSuchElementException if the list is empty
         System.out.println(list1.pop()); // Moon
         System.out.println(list1); // [Mars, Jupitar]

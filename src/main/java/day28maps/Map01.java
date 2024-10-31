@@ -102,12 +102,22 @@ public class Map01 {
             j++;
         }
 
+        System.out.println();
+        System.out.println("====== While loop with Iterator =======");
 
+        Map<String, Integer> myMap2 = new HashMap<>();
+        myMap2.put("a", 1);
+        myMap2.put("b", 2);
+        myMap2.put("c", 3);
 
-
+        // Using an iterator with a while loop
+        Iterator<Map.Entry<String, Integer>> iterator = myMap2.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, Integer> entry = iterator.next();
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
 
 
     }
-
 
 }

@@ -1,0 +1,55 @@
+Online Library System
+
+Goal: We want to build a simple library management system where users can:
+•Search for books
+•Borrow books
+•Return books
+
+The system should handle users trying to borrow books that are already taken and manage
+a waiting list for popular books.
+Additionally, it should ensure that only registered users can borrow books.
+
+
+1.Initialize the Library: Use a HashMap to store book titles and statuses (available or borrowed).
+Each book can be represented by an object that contains the title, author, and status.
+
+2.User Registration and Unique Management: Create a HashSet to store user IDs uniquely.
+When a new user registers, add their ID to this set.
+
+3.Borrowing and Returning Books:
+•If a book is available, mark it as borrowed and add the user’s name to the LinkedList of active borrowers.
+•If a book is not available, add the user to a Queue, so they are notified when the book is returned.
+
+4.Handle Exceptions:
+•If a user tries to borrow a book that isn’t in the library, throw a BookNotFoundException.
+•If a user who isn’t registered tries to borrow a book, throw a UserNotRegisteredException.
+
+5.Use Enum for Book Genres: Define an enum for book genres (e.g., FICTION, SCIENCE, HISTORY, etc.)
+and associate each book with a genre. Allow users to filter books by genre.
+
+6. Iterate and Manage Books: Implement an iterator to list all books that are available
+in a specific genre and allow users to check their status.
+
+
+Use a few important Java data structures and concepts to achieve this:
+
+1.Map (HashMap): To store information about each book, including its title, author,
+and status (whether it's available or borrowed).
+
+2.List (ArrayList & LinkedList):
+•ArrayList: To store lists of books, such as a list of all available books.
+•LinkedList: To keep track of which users are currently borrowing books.
+
+3. Set (HashSet): To store user IDs in a way that ensures each user is unique.
+
+4. Queue (LinkedList as Queue): To manage a waiting list of users for books that
+   are currently borrowed.
+
+5. Exception Handling: To handle cases where:
+•A user tries to borrow a book that isn't in the library.
+•A user who isn't registered tries to borrow a book.
+
+6. Enum: To define book genres (e.g., FICTION, SCIENCE, HISTORY)
+   and associate each book with a genre.
+
+7. Iterator: To allow users to list books of a specific genre and check their availability

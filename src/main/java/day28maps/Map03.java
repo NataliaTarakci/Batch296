@@ -73,7 +73,7 @@ public class Map03 {
         capitals.put("Italy", null);
         capitals.put("Afghanistan", null);
         capitals.put("Tunisia", null);
-        System.out.println("capitals = " + capitals);
+        System.out.println("capitals = " + capitals);//{Afghanistan=null, Germany=Berlin, Italy=null, Spain=Madrid, Tunisia=null, Turkiye=Ankara, UAE=Abu Dhabi, UK=London}
 
 
         /*
@@ -107,11 +107,13 @@ public class Map03 {
         }
 
 
-
-
-
-
-
+        // Get the entries from the map ony by one. Then separate the keys and values
+        System.out.println("============ mine ===============");
+        for (Map.Entry<String, String> w : capitals1.entrySet()){
+            System.out.println("entry = " + w);
+            System.out.println("getKey = " + w.getKey());
+            System.out.println("getValue = " + w.getValue());
+        }
 
 
 

@@ -47,7 +47,7 @@ public class E09 {
         } catch (Exception e){
             e.printStackTrace();
         } finally { // works everytime when the code is executed
-            // connection.close;
+            // Connection.close;
             System.out.println("Cut the connection with the database.");
         }
     }

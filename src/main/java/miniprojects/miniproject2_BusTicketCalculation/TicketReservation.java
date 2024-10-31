@@ -13,7 +13,7 @@ public class TicketReservation {
         // use loop to present the choice options to every passenger once the start() is called
 
         do{
-            System.out.println(" Welcome Bouka Transport Reservation Desk");
+            System.out.println("Welcome Bouka Transport Reservation Desk");
 
             // Get distance from the user
             System.out.println("Enter the distance that you want to travel");

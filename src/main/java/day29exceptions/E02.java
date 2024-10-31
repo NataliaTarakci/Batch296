@@ -24,7 +24,7 @@ public class E02 {
             int numbers = Integer.valueOf(s);
             System.out.println("numbers in int data type = " + numbers);
         }catch (NumberFormatException e){
-            System.out.println("Strings with mix of numbers and letters can't be converted ti int data");
+            System.out.println("Strings with mix of numbers and letters can't be converted to int data");
             System.out.println(e.getMessage());
 
         }

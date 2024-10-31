@@ -31,7 +31,7 @@ public class Iterator02 {
         }
         System.out.println("myList = " + myList);
 
-        // remove e specific element
+        // remove a specific element
         // [Apples, Oranges, Cherrys, Figs, Lychees]
 
         /*
@@ -52,14 +52,14 @@ public class Iterator02 {
         will NOT be removed because the while loop never reached next() or remove().
 
         To solve this, we have 2 options:
-        Options 1: re-initialise the myListIterator and then run the loop
-        Options 2: Create a new list
-        Options 3: use hasPrevious()
+        Option 1: re-initialise the myListIterator and then run the loop
+        Option 2: Create a new list
+        Option 3: use hasPrevious()
          */
 
 
 
-//        Options 1: re-initialise the myListIterator
+//        Option 1: re-initialise the myListIterator
         myListIterator = myList.listIterator();
 
         while (myListIterator.hasNext()){
@@ -75,7 +75,7 @@ public class Iterator02 {
 
 
 
-//        Options 2: Create a new list
+//        Option 2: Create a new list
         List<String> yourList = new ArrayList<>(Arrays.asList("Apple", "Cherry", "Orange", "Fig", "Lychee"));
         System.out.println("yourList = " + yourList);
 
@@ -90,7 +90,7 @@ public class Iterator02 {
         System.out.println("yourList = " + yourList); // [Apple, Cherry, Orange, Lychee]
 
 
-        //Options 3: use hasPrevious()
+        //Option 3: use hasPrevious()
         while (myListIterator.hasPrevious()){
             String element = myListIterator.previous();
             if (element.equals("Lychees")){

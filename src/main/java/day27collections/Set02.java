@@ -34,7 +34,8 @@ public class Set02 {
         lhs.add(3);
         lhs.add(11);
         lhs.add(6);
-        lhs.add(8);
+        System.out.println("lhs.add(8) = " + lhs.add(8));// lhs.add(8) = true
+        System.out.println("lhs.add(8) = " + lhs.add(8));// lhs.add(8) = false
         System.out.println("lhs = " + lhs); // follows the insertion order => [23, 3, 11, 6, 8]
 
 
