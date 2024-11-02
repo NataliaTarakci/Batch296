@@ -48,7 +48,7 @@ public class Lambda03 {
 
     }
 
-    // Create a method to print the UNIQUE elements whose number of characters is greater 6
+    // Create a method to print the UNIQUE elements whose number of characters is greater than 6
     // [Natalia, Ali, Rumeysa, Hasibullah, Kemal, Ali, rumeysa]
 
     public static void elementsGreaterThanSix(List<String> list){

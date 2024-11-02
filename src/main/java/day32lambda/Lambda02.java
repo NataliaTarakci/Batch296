@@ -14,13 +14,15 @@ public class Lambda02 {
         findMinimum1(myList); // 2
         findMinimum2(myList); // 2
         findMinimum3(myList); // 2
+        findMinimum4(myList);
+        findMinimum5(myList);
     }
 
 
-    // Create a method find out the maximum element from the given list
+    // Create a method find out the minimum element from the given list
     //  [11, 2, 24, 5, 2, 11, 13]
 
-    // 1st way: by using Integer.MIN_VALUE as our identity element in reduce()
+    // 1st way: by using Integer.MAX_VALUE as our identity element in reduce()
     public static void findMinimum(List<Integer> list){
 
         int min = list.stream().distinct().reduce(Integer.MAX_VALUE, ( t,   u) ->  t > u  ?  u : t);
