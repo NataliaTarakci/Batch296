@@ -8,6 +8,7 @@ public class LibrarySystem {
     // Step 1: Use a HashMap to store books with their titles as keys and Book objects as value
     private Map<String, Book> books = new HashMap<>();
 
+
     // Step 2: Use a HashSet to store unique user IDs
     private Set<String> registeredUsers = new HashSet<>();
 
@@ -75,6 +76,7 @@ public class LibrarySystem {
 
     //Step 8: Method to return a borrowed book
     public void returnBook(String userId, String bookTitle) {
+        System.out.println("my books;;;"+books.keySet());
         Book book = books.get(bookTitle);
         if (book != null && !book.isAvailable()) {
             // a) Update the book status to available

@@ -10,7 +10,7 @@ public class Utils {
     projects, and we invoke these methods as needed. We can create new methods that are fit for the purpose.
 
      */
-    // This method print the elements from a variable on the same line with a space between them
+    // This method prints the elements from a variable on the same line with a space between them
     public static void printWithSpace(Object obj){
         System.out.print(obj +  " ");
     }

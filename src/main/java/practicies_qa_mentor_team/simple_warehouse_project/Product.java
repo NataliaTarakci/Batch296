@@ -2,7 +2,7 @@ package practicies_qa_mentor_team.simple_warehouse_project;
 
 public class Product {
 
-    private int productId;
+
     private String productName;
     private String manufacturer;
     private int quantity;
@@ -12,27 +12,12 @@ public class Product {
     public Product() {
     }
 
-    public Product(String productName, String manufacturer, String unit) {
-        this.productName = productName;
-        this.manufacturer = manufacturer;
-        this.unit = unit;
-    }
-
-    public Product(int productId, String productName, String manufacturer, int quantity, String unit, String shelf) {
-        this.productId = productId;
+    public Product(String productName, String manufacturer, int quantity, String unit, String shelf) {
         this.productName = productName;
         this.manufacturer = manufacturer;
         this.quantity = quantity;
         this.unit = unit;
         this.shelf = shelf;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
     }
 
     public String getProductName() {
@@ -77,9 +62,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "productId=" + productId +
-                ", productName='" + productName + '\'' +
+        return "{" +
+                "productName='" + productName + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", quantity=" + quantity +
                 ", unit='" + unit + '\'' +
@@ -87,3 +71,5 @@ public class Product {
                 '}';
     }
 }
+
+

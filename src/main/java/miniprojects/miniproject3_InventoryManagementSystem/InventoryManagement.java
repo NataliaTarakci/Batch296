@@ -48,7 +48,8 @@ public class InventoryManagement {
             }
         }
     }
-    // NOTE: the old item in the list will be cleaned up by the garbage collector if there are no other references to it, leaving the list with only the updated item.
+    // NOTE: the old item in the list will be cleaned up by the garbage collector if there are no other references to it,
+    // leaving the list with only the updated item.
 
     /* OR using for-each loop
 

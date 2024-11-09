@@ -21,7 +21,7 @@ public class Lambda01 {
 
 
         // method call
-        System.out.println(getSumBetweenGivenIntegers());  // 2464
+        System.out.println("getSumBetweenGivenIntegers: "+getSumBetweenGivenIntegers());  // 2464
 
         System.out.println(multiplyGivenIntegers()); // 19958400
 
@@ -35,7 +35,8 @@ public class Lambda01 {
 
     // Create a method to get the sum of integers between 7 and 70
     public static int getSumBetweenGivenIntegers(){
-        return IntStream.rangeClosed(7, 70).reduce(Math::addExact).getAsInt();
+        return IntStream.rangeClosed(7, 70).sum();
+        //return IntStream.rangeClosed(7, 70).reduce(Math::addExact).getAsInt();
     }
 
     // Create a method that multiplies integers between 3  and 11

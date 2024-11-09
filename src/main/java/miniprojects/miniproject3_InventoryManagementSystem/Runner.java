@@ -12,7 +12,8 @@ public class Runner {
 
         /*
         Arrays.asList: This method returns a fixed-size list backed by the original array.
-        This means you can modify elements, but you cannot add or remove elements. Attempting to do so will throw an UnsupportedOperationException.
+        This means you can modify elements, but you cannot add or remove elements.
+        Attempting to do so will throw an UnsupportedOperationException.
 
         ArrayList: This is a resizable array implementation in Java. You can freely add or
         remove elements, and the ArrayList will automatically resize to accommodate changes.

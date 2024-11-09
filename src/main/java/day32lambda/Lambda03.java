@@ -107,5 +107,7 @@ public class Lambda03 {
         System.out.println(list);
     }
 
+    //removeIf() removes the elements if the condition inside is true
+
 
 }

@@ -2,6 +2,7 @@ package miniprojects.miniproject3_InventoryManagementSystem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Example {
@@ -18,7 +19,8 @@ public class Example {
     }
 
     public static List<String> sortByLength(List<String> list){
-        return list.stream().sorted((t, u) -> Integer.compare(t.length(), u.length())).toList();
+        //return list.stream().sorted((t, u) -> Integer.compare(t.length(), u.length())).toList();
+        return list.stream().sorted(Comparator.comparingInt(String::length)).toList();
 
     }
 

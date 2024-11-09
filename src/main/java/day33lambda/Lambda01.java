@@ -49,7 +49,7 @@ public class Lambda01 {
 
 
     // Create a method to delete elements whose length is between 4 and 8 or ends with 'f'
-    // [Alexander, Alf, Yusuf, Maryam, Josef, Shukrullah]
+    // [Alexander, Ali, Yusuf, Maryam, Josef, Shukrullah]
 
     public static void removeElements3(List<String> list){
         Predicate<String> condition = t-> t.length() > 4 && t.length()<8 || t.endsWith("f");
