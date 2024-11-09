@@ -83,7 +83,7 @@ public class WarehouseSystem {
         System.out.println("==============================================================================");
         for (Map.Entry<Integer, Product> entry : warehouseItems.entrySet()){
             Integer key = entry.getKey();
-            System.out.printf("%-8s %-18s %-18s %-14s %-10s %-10s\n",
+            System.out.printf("%-8d %-18s %-18s %-14d %-10s %-10s\n",
                     key, warehouseItems.get(key).getProductName(),
                     warehouseItems.get(key).getManufacturer(),
                     warehouseItems.get(key).getQuantity(),
